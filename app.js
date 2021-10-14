@@ -21,7 +21,7 @@ app.use(bodyParser.json({limit:'50mb'}));
 
 app.use(router)
 
-const DB_URI = `mongodb+srv://prasath:${process.env.MONGO_KEY}@cluster0.pynuy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const DB_URI = `mongodb+srv://prasath:balpraman@cluster0.pynuy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 mongoose.connect(DB_URI,{
   useNewUrlParser: true,

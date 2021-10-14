@@ -31,7 +31,7 @@ const loginUser = (req,res,done)=>{
 
                  const token = jwt.sign(
                 { email: user.email, id: user._id },
-                process.env.SECRET_KEY,
+                "NemesisProject",
                 { expiresIn: "5m" })
 
                 res.send({result:'success',token,user})

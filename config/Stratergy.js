@@ -7,7 +7,7 @@ const auth =async (req,res,next)=>{
 
       
       const token =  req.header('x-auth-token')
-      const decodedToken = jwt.verify(token,process.env.SECRET_KEY); 
+      const decodedToken = jwt.verify(token,"NemesisProject"); 
 
       req.userData = {
          email: decodedToken.email,
